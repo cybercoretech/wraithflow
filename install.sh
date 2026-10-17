@@ -9,7 +9,7 @@
 # (default: ~/.local/bin).
 set -euo pipefail
 
-REPO="cybercore-tech/wraithflow"
+REPO="cybercoretech/wraithflow"
 INSTALL_DIR="${WRAITHFLOW_INSTALL_DIR:-$HOME/.local/bin}"
 
 say() { printf '%s\n' "$*"; }
