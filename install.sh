@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Installs wraithflow + wf-tui from the latest GitHub Release.
 #
-#   curl -fsSL https://raw.githubusercontent.com/cybercore-tech/wraithflow/main/install.sh | sh
+#   curl -fsSL https://raw.githubusercontent.com/cybercoretech/wraithflow/main/install.sh | sh
 #
 # Downloads the release archive matching this machine's OS/arch,
 # verifies its sha256 against the checksum GitHub Actions published

@@ -1,6 +1,6 @@
 [Unit]
 Description=WraithFlow — stealth traffic proxy & analyzer (config-driven pipelines)
-Documentation=https://github.com/cybercore-tech/wraithflow
+Documentation=https://github.com/cybercoretech/wraithflow
 After=network.target
 
 [Service]

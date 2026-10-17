@@ -112,9 +112,9 @@ shared JSONL file, one line per packet across every pipeline:
 capture_log = "~/.local/state/wraithflow/captures.jsonl"   # omit to disable — default
 ```
 
-[Echo](https://github.com/cybercore-tech/echo) (`wf-echo`) tails this file —
+[Echo](https://github.com/cybercoretech/echo) (`wf-echo`) tails this file —
 a real flow list you can filter/search/inspect, not just watch scroll past.
-See [Echo's site](https://cybercore-tech.github.io/echo/) for install/usage.
+See [Echo's site](https://cybercoretech.github.io/echo/) for install/usage.
 Same redaction already applied, same filters already decided what gets
 logged at all — this is an additional sink for the exact same content, not
 a second logging decision.
@@ -240,10 +240,10 @@ short before WraithFlow's own timeout gets a chance to.
 ## 📥 Install
 
 Prebuilt binaries (Linux x86_64/aarch64, macOS x86_64/aarch64) from the
-[latest release](https://github.com/cybercore-tech/wraithflow/releases/latest):
+[latest release](https://github.com/cybercoretech/wraithflow/releases/latest):
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/cybercore-tech/wraithflow/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/cybercoretech/wraithflow/main/install.sh | sh
 ```
 
 Installs `wraithflow` and `wf-tui` to `~/.local/bin` (override with
@@ -252,7 +252,7 @@ checksum published alongside it. No release for your platform yet, or
 you'd rather build from source:
 
 ```bash
-cargo install --git https://github.com/cybercore-tech/wraithflow wraithflow
+cargo install --git https://github.com/cybercoretech/wraithflow wraithflow
 ```
 
 ## ▶️ Running
