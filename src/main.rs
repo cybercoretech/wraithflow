@@ -19,7 +19,7 @@ use wf_proxy::OutputSpec;
 #[derive(Parser, Debug)]
 #[command(
     name = "wraithflow",
-    version = "0.1.0",
+    version,
     about = "Stealth Traffic Network Proxy & Analyzer"
 )]
 struct Args {
