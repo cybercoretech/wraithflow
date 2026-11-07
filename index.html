@@ -117,8 +117,35 @@ footer a { color: var(--muted); text-decoration: none; }
 footer a:hover { color: var(--ember-lt); }
 footer .sep { margin: 0 0.6rem; opacity: 0.5; }
 </style>
+  <link rel="stylesheet" href="https://cybercoretech.github.io/kit/chooser.css">
+  <style>
+    .cc-site-tools{position:absolute;top:16px;right:16px;z-index:50;display:flex;align-items:center;gap:10px}
+    @media(max-width:600px){.cc-site-tools{position:static;justify-content:flex-end;padding:12px 16px 0}}
+    .cc-site-tools a{color:#22e6ff;background:#0d1422ee;border:1px solid #263454;border-radius:999px;padding:8px 12px;text-decoration:none;font:600 .75rem ui-monospace,monospace;letter-spacing:.08em;white-space:nowrap}
+    .cc-site-tools cybercore-theme-chooser{--ccx-font:var(--mono);--ccx-bg:var(--panel);--ccx-fg:var(--text);--ccx-line:var(--line);--ccx-accent:var(--purple);--ccx-focus:var(--acid);--ccx-field:var(--void);--ccx-muted:var(--muted);--ccx-button-bg:#0d1422ee;--ccx-button-border:#263454;--ccx-radius:999px;--ccx-button-width:auto;--ccx-height:2.25rem;--ccx-glow:.4}
+  </style>
+  <script>window.SITE = Object.assign(window.SITE || {}, {"siteLabel": "WraithFlow", "themeVars": {"bg": "--void", "white": "--text", "orange": "--ember", "acid_green": "--acid"}});</script>
+  <script type="module" src="https://cybercoretech.github.io/kit/chooser.js"></script>
+  <style id="cc-mobile-first">
+/* Mobile floor (phones + tablets): readable text and finger-sized targets.
+   Generated per range from what renders under 11px / 24px; desktop untouched. */
+@media (pointer: coarse) {
+  a.more-link { min-height: 24px; min-width: 24px; }
+  footer > a { display: inline-flex; align-items: center; min-height: 24px; min-width: 24px; }
+}
+/* Layout fixes: phones and tablets only; laptops and desktops untouched. */
+@media (max-width: 1024px) {
+  /* Mobile first: nothing may make the page wider than the screen.
+     Grid/flex columns may shrink below their widest line; code scrolls in place. */
+  pre { max-width: 100%; overflow-x: auto; }
+  img, video { max-width: 100%; height: auto; }
+  /* Long paths and URLs in inline code may break anywhere instead of widening the page. */
+  :not(pre) > code { overflow-wrap: anywhere; }
+}
+  </style>
 </head>
 <body>
+  <div class="cc-site-tools"><a data-cybercore-master-docs href="https://cybercoretech.github.io/cybercore/docs.html">MASTER DOCS ↗</a><cybercore-theme-chooser compact></cybercore-theme-chooser></div>
 <main>
   <div class="hero-wrap"><img src="assets/wraithflow-hero.svg" alt="WraithFlow"></div>
   <div class="cta-row">
@@ -305,5 +332,5 @@ wraithflow --admin --status</div>
 })();
 </script>
   <script type="module" src="https://cybercoretech.github.io/kit/contact.js"></script>
-<a data-cybercore-master-docs href="https://cybercoretech.github.io/cybercore/docs.html" style="position:fixed;top:16px;right:16px;z-index:99999;color:#22e6ff;background:#0d1422ee;border:1px solid #263454;border-radius:999px;padding:8px 12px;text-decoration:none;font:600 .7rem ui-monospace,monospace;letter-spacing:.08em;box-shadow:0 0 18px #22e6ff22">MASTER DOCS ↗</a></body>
+</body>
 </html>
